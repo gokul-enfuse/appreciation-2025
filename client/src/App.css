@@ -1,0 +1,146 @@
+body{
+    margin: 0px 0px;
+    padding: 0px 0px;
+    font-family: sans-serif, arial;
+}
+.logo-area{
+    margin: 0px auto;
+    text-align: center;
+    background: url('./components/appreciation-logo.jpg');
+    width: 100%;
+    /* display: flex; */
+    height: 523px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.form-container {
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    
+}
+
+h2 {
+    color: #28b6d2;
+    text-decoration: none;
+    padding-bottom: 20px;
+}
+
+.background-container {
+    background-image: url('./components/bg-form2.jpg');
+    background-repeat: repeat-y;
+    background-size: auto;
+    background-position: top center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    position: relative;
+    margin: 0px 0px;
+    padding: 0px 0px;
+  }
+
+/* img.background {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(10px);
+    filter: blur(0px);
+} */
+.form{
+    padding: 0px;
+}
+Form .btn {
+    cursor: pointer;
+    margin: 0 auto;
+    text-align: left;
+    border: 2rem #28b6d2;
+    background-color: rgb(17, 36, 74);
+    box-shadow: 0 8px 6px 0 rgba(165, 167, 169, 0.703), 0 8px 8px 0;
+    display: flex;
+    font-size: 20px;
+    font-weight: bold;
+    color:  rgb(255, 255, 255);
+    position: inherit;
+}
+
+
+
+
+label{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(14, 3, 79);
+    padding: 0px 0px;
+    margin: 0px 0px;
+    vertical-align: bottom;
+    margin-bottom: 0px !important;
+}
+.form-div{
+    width: 50%;
+    float: left;
+    padding: 10px 10px;
+}
+.tag-field{
+    width: 100%;
+   padding-bottom: 10px;
+   height: 47px;  
+}
+.form-div-full{
+    width: 100%;
+    float: left;
+    padding: 10px 10px;
+}
+.button-div{
+    width: 100%;
+    float: left;
+    margin: 30px 0 0 0;
+}
+.alert-primary{
+    position: absolute !important;
+    width: 100%;
+    height: 100%;
+    z-index: 9;
+    opacity: 0.9;
+}
+.alert-primary h2{
+    /* display: flex; */
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    width: 100%;
+    color: green;
+    font-size: 40px;
+    font-weight: bold;
+}
+/* .visibility-none{
+    visibility: hidden;
+} */
+.errorText{
+    font-size: 12px;
+    color: red;
+    font-style: italic;
+    margin: 0px;
+    padding: 5px 0 0 0;
+}
+
+@media only screen and (max-width: 768px){
+    .logo-area{
+        background-size: contain;
+        height: 180px;
+    }
+    .form-div-full{
+        width: 100%;
+    }
+    .form .form{
+        padding: 0px 20px !important;
+    }
+    .form-div{
+        width: 100%;
+    }        
+}
