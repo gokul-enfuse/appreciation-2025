@@ -1,1 +1,24 @@
-test
+name: Deploy Frontend to Windows Server
+
+on:
+  push:
+    branches:
+      - test  
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Deploy files to Windows Server via SCP
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: 52.44.231.112
+          username: ats_user
+          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          source: "./*"   
+          target: "C:/nginx/test"  # Destination directory on Windows server
+
